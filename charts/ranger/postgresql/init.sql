@@ -3,3 +3,4 @@ create database ranger with owner rangeradmin;
 GRANT ALL PRIVILEGES ON SCHEMA public TO rangeradmin;
 GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO rangeradmin;
 GRANT ALL PRIVILEGES ON ALL SEQUENCES IN SCHEMA public TO rangeradmin;
+ALTER ROLE rangeradmin IN DATABASE ranger SET tcp_keepalives_idle TO '0';
